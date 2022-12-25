@@ -2,6 +2,11 @@
 
 # product partition
 
+# Felica
+product/etc/felica/common.cfg
+product/etc/felica/mfm.cfg
+product/etc/felica/mfs.cfg
+
 # IMS
 product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 

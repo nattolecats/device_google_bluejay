@@ -17,8 +17,9 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_bluejay.mk \
     $(LOCAL_DIR)/factory_bluejay.mk \
-    $(LOCAL_DIR)/calyx_bluejay.mk
+    $(LOCAL_DIR)/evolution_bluejay.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    aosp_bluejay-userdebug
+    evolution_bluejay-userdebug \
+    evolution_bluejay-eng
