@@ -17,6 +17,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/bluejay/bluejay:13/TQ1A.221205.011/9244662:user/release-keys
 
+# Enable Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 $(call inherit-product, vendor/google/bluejay/bluejay-vendor.mk)

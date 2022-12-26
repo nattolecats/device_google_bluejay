@@ -137,6 +137,31 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.6.vendor:64 \
     com.google.hardware.pixel.display-V4-ndk.vendor \
     com.google.hardware.pixel.display-V5-ndk.vendor
+    
+# Enable Adaptive Charging
+PRODUCT_COPY_FILES += \
+    device/google/bramble/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
+
+# Enable Now Playing
+PRODUCT_PACKAGES += NowPlayingOverlay
+
+# VoLTE / VoWiFi config
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.data.iwlan.enable=true \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.radio.rat_on=combine \
+    persist.radio.data_ltd_sys_ind=1 \
+    persist.radio.data_con_rprt=1 \
+    persist.radio.calls.on.ims=1 \
+    persist.data.iwlan=1 \
+    persist.data.iwlan.ipsec.ap=1 \
+    persist.radio.volte.dan_support=true \
+    persist.radio.VT_ENABLE=1 \
+    persist.sys.cust.lte_config=true \
+    persist.rcs.supported=1
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop

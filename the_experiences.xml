@@ -12,5 +12,10 @@
     <feature name="com.google.android.feature.PIXEL_2020_EXPERIENCE" />
     <feature name="com.google.android.feature.PIXEL_2021_MIDYEAR_EXPERIENCE" />
     <feature name="com.google.android.feature.PIXEL_2021_EXPERIENCE" />
-    <feature name="com.google.android.feature.PIXEL_2022_MIDYEAR_EXPERIENCE" />
+    
+    <!-- Enable Adaptive charging -->
+    <feature name="com.google.android.feature.ADAPTIVE_CHARGING" />
+
+    <!-- Next-generation Assistant -->
+    <feature name="com.google.android.feature.NEXT_GENERATION_ASSISTANT" />
 </config>
