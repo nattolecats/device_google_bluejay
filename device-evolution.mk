@@ -140,7 +140,7 @@ PRODUCT_PACKAGES += \
     
 # Enable Adaptive Charging
 PRODUCT_COPY_FILES += \
-    device/google/bramble/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
+    device/google/bluejay/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
 
 # Enable Now Playing
 PRODUCT_PACKAGES += NowPlayingOverlay
