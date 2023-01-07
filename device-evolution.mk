@@ -165,3 +165,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
+# PixelParts
+$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
